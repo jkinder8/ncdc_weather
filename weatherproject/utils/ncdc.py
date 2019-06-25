@@ -40,9 +40,9 @@ class NcdcWeather:
 
     def __build_min_max_querystring(self,start_day,end_day):
         '''Builds the querstring to send to ncdc site'''
-        return self.url + '?datasetid=GHCND&stationid=GHCND:' + self.station \
-            + '&startdate=' + start_day + '&enddate=' + end_day + \
-            '&datatypeid=TMIN&datatypeid=TMAX&units=standard&limit=' + str(self.limit)
+        return (self.url + '?datasetid=GHCND&stationid=GHCND:' + self.station 
+            + '&startdate=' + start_day + '&enddate=' + end_day + 
+            '&datatypeid=TMIN&datatypeid=TMAX&units=standard&limit=' + str(self.limit))
 
 
 
